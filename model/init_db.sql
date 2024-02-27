@@ -3,7 +3,8 @@
 --
 
 SET foreign_key_checks = 0;
-DROP TABLE if exists items;
+DROP TABLE if exists children;
+DROP TABLE if exists donations;
 SET foreign_key_checks = 1;
 
 --
