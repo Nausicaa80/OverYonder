@@ -1,15 +1,15 @@
 var express = require('express');
 var router = express.Router();
-x/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+const db = require("../model/helper");
+/* GET users listing. */
+
 
 module.exports = router;
 
 //select donations from database
 router.get("/", function(req, res, next) {
-  database("SELECT * FROM donations;")
+  
+  db("SELECT * FROM donations;")
     .then(results => {
       res.send(results);
     })
@@ -21,16 +21,16 @@ router.get("/", function(req, res, next) {
 
 //Select boy in  childrenGender 
 
-// Select boy in childrenGender
-router.get("/:childrenGender", function (req, res, next) {
-  const childrenGender = req.params.childrenGender;
+/*Select boy in childrenGender
+//router.get("/:childrenGender", function (req, res, next) {
+  //const childrenGender = req.params.childrenGender;
 
-  if (childrenGender === "boy") {
+  //if (childrenGender === "boy") {
     // Logic for when childrenGender is "boy"
-    res.send({ message: "You selected boy" });
-  } else {
+    //res.send({ message: "You selected boy" });
+  //} else {
     // Logic for when childrenGender is not "boy"
-    res.send({ message: "You did not select boy" });
+   // res.send({ message: "You did not select boy" });
   }
 });
 
@@ -38,14 +38,14 @@ router.get("/:childrenGender", function (req, res, next) {
 router.get("/:childrenGender", function (req, res, next) {
   const childrenGender = req.params.childrenGender;
 
-  if (childrenGender === "girl") {
+  if (childrenGender === "girls") {
     // Logic for when childrenGender is "girl"
     res.send({ message: "You selected girl" });
   } else {
     // Logic for when childrenGender is not "girl"
-    res.send({ message: "You did not select girl" });
+    res.send({ message: "You did not select Girls" });
   }
-});
+});*/
 
 
 // insert new donation item into the database
@@ -56,7 +56,7 @@ router.post("/", function (req, res, next) {
     return res.status(400).json({ message: "Item and Item price are required" });
   }
 
-  database(`INSERT INTO donations (item, itemPrice) VALUES ('${item}', ${itemPrice})`)
+  db(`INSERT INTO donations (item, itemPrice) VALUES ('${item}', ${itemPrice})`)
     .then(() => {
       res.status(201).json({ message: "Donation item added successfully" });
     })
@@ -69,7 +69,7 @@ router.post("/", function (req, res, next) {
   //delete donation item from database from ID
   router.delete("/:id", function (req, res, next) {
     const itemId = parseInt(req.params.id);
-    database(`DELETE FROM donations WHERE id = ${itemId}`)
+    db(`DELETE FROM donations WHERE id = ${itemId}`)
         .then(results => {
             if (results.affectedRows > 0) {
                 res.json({ message: "Item deleted" });
