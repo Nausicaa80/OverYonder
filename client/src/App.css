@@ -1,42 +1,74 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  box-sizing: border-box;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app {
+  padding: 5rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heading {
+  font-size: 5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .card {
-  padding: 2em;
+  padding: 1rem;
+  border: solid 1px pink;
+  margin: 1rem;
+  width: 20rem;
 }
 
-.read-the-docs {
-  color: #888;
+input {
+  margin: auto;
+  margin-bottom: 1.5em;
+}
+
+.form-inputs {
+  text-align: right;
+  width: 60%;
+  margin: auto;
+}
+
+form {
+  background-color :blueviolet;
+  border-radius: 10px;
+  margin: auto;
+  width: 33%;
+  padding: 1em 2em 1em 1em;
+  border: 2px solid purple;
+}
+
+button {
+  border-radius: 5px;
+  font-size: large;
+  font-style: italic ;
+  color: fuchsia;
+background-color :black;
+}
+
+.form-btn {
+  padding: 0.5em;
+  margin-bottom: 1.5em;
+  background-color: hotpink
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 200px;
+}
+
+body {
+  
+  background-color:red;
 }
