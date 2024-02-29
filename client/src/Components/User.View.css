@@ -1,0 +1,41 @@
+.img_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+  
+  .project {
+    background-color: red;
+    padding: 10px;
+  }
+  .project img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20%;
+    margin-bottom: 20px;
+  }
+  
+  .featured {
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    margin-bottom: 50px;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .left img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+
+.hidden {
+  display:none;
+}
