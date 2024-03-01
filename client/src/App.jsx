@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
-import AdminView from './components/AdminView';
-import UserView from './components/UserView';
+import AdminView from './Components/AdminView';
+import UserView from './Components/UserView';
 
 function App() {
   const [isAdmin, setIsAdmin] = useState(false);
