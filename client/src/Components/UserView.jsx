@@ -52,7 +52,8 @@ function UserView() {
       title: 'HandCream', 
       price: '£5',
       description: 'Rose Scented HandCream', 
-      url: 'https://www.amazon.co.uk/Yardley-London-English-Nourishing-Cream/dp/B00UVR3JUU/ref=asc_df_B00UVR3JUU&mcid=4632b5b9678d3fe89b8bb2dfff8b98e8?tag=bingshoppinga-21&linkCode=df0&hvadid=80126967116319&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=&hvtargid=pla-4583726541596242&psc=1'
+      url: 'https://www.amazon.co.uk/Yardley-London-English-Nourishing-Cream/dp/B00UVR3JUU/ref=asc_df_B00UVR3JUU&mcid=4632b5b9678d3fe89b8bb2dfff8b98e8?tag=bingshoppinga-21&linkCode=df0&hvadid=80126967116319&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=&hvtargid=pla-4583726541596242&psc=1',
+      img: 'https://www.amazon.co.uk/Yardley-London-English-Nourishing-Cream/dp/B00UVR3JUU/ref=asc_df_B00UVR3JUU&mcid=4632b5b9678d3fe89b8bb2dfff8b98e8?tag=bingshoppinga-21&linkCode=df0&hvadid=80126967116319&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=&hvtargid=pla-4583726541596242&psc=1',
       
     },
     { 
@@ -65,7 +66,7 @@ function UserView() {
     { 
       id: 3, 
       title: 'Makeupkit', 
-      price: '15', 
+      price: '£15', 
       url: 'https://www.amazon.co.uk/LYMYBETY-Cosmetic-Portable-Eyeshadow-Foundation/dp/B0BV2LXP9N/ref=sr_1_1?crid=330HX5UWM8J6E&dib=eyJ2IjoiMSJ9.vjo_YHSJmzRrn6esl6I8V_YrA_vTHFgmWtp2k2FMfkhWBFz_rDLAZFgD8A5oMdV8uC0lH8j4KuarIt_ORwhZ1CHxdRTTDddd5sSuO6NHpps3GhYYwwqcgJjCDVMPkSDIcXJWWPsSYcReutztFwLErnJ9PRLKEVJOazwUMdId2I63_AYbd07gbUj1pmbGtgVWKEIppkO4gLP3OVKv_AqeCqhDDjlzxgzUn-hiooAC7wdyn5scXyGRLzJMqQYE-8kx3sLLOKMpm3LLT9HU5mZP3Xm0P0DFFV0m2yzHJp1wZO8.a6wUc9nvbuZwwDkGrHdEI31oklzGShY8Cz9jm7u2JkQ&dib_tag=se&keywords=makeup+kit&qid=1709208259&sprefix=makeup+kit%2Caps%2C119&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1', 
       description: 'Makeup Kit'
     },
