@@ -1,22 +1,25 @@
-import {useState} from "react";
-import Donations from "Donations";
+import Card from "./Card";
+import React from "react";
+
 export default function ImageGrid({ projects }) {
-    return (
-      <>
-        <h1>Gift Selection</h1>
-        <div className="img-grid">
-          
-        </div>
-        <div className="img-grid">
-          {projects.map((p) => (
-            <img
-              key={p.id}
-              src={p.image}
-              alt={p.title}
-              onClick={(e) => console.log("Handle update image", e)}
-            />
-          ))}
-        </div>
-      </>
-    );
-  }
+  return (
+    <>
+      
+      <div className="img-grid">
+        <Card number={1} project={projects[0]} />
+        <Card number={2} project={projects[1]} />
+        <Card number={3} project={projects[2]} />
+      </div>
+      <div className="img-grid">
+        {projects.map((p) => (
+          <img
+            key={p.id}
+            src={p.image}
+            alt={p.title}
+            onClick={(e) => console.log("Handle update image", e)}
+          />
+        ))}
+      </div>
+    </>
+  );
+}
