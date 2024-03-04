@@ -21,7 +21,7 @@ CREATE TABLE donations (
     item VARCHAR(40) NOT NULL, 
     itemPrice INTEGER NOT NULL,
     itemUrl VARCHAR(250) NOT NULL,
-    itemDescription VARCHAR(250) NOT 
+    itemDescription VARCHAR(250) NOT NULL,
     PRIMARY KEY (id)
 );
 

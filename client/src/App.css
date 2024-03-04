@@ -22,7 +22,7 @@
 
 .card {
   padding: 1rem;
-  border: solid 1px pink;
+  border: solid 1px black;
   margin: 1rem;
   width: 20rem;
 }
@@ -39,19 +39,20 @@ input {
 }
 
 form {
-  background-color :blueviolet;
+  background-color :green;
+  background-image: "https://th.bing.com/th/id/OIP.C7bOSD8yaRxwhQYSDZAaEgEsC7?rs=1&pid=ImgDetMain";
   border-radius: 10px;
   margin: auto;
   width: 33%;
   padding: 1em 2em 1em 1em;
-  border: 2px solid purple;
+  border: 2px solid red;
 }
 
 button {
   border-radius: 5px;
   font-size: large;
   font-style: italic ;
-  color: fuchsia;
+  color: red; 
 background-color :black;
 }
 
