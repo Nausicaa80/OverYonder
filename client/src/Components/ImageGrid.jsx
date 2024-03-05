@@ -1,28 +1,21 @@
-import Card from "./Card";
-import React from "react";
-//import Items from "./items.js";
 
-
-export default function ImageGrid({ donations }) {
+function ImageGrid({ donations, onDonationSelect }) {
   return (
-    <>
-      
-      <div className="img-grid">
-       {/* <Card number={1} project={projects[0]}s */}
-        {/* <Card number={2} project={projects[1]} /> */}
-        {/* <Card number={3} project={projects[2]} /> */}
-        {/* <Card number={4}project={projects[2]}/> */}
-      </div>
-      <div className="img-grid">
-        {donations.map((p) => (
+    <div className='image-grid'>
+      {donations.map((donation) => (
+        <div key={donation.id} className='image-container'>
           <img
-            key={p.id}
-            src={p.itemUrl}
-            alt={p.item}
-            onClick={(e) => console.log("Handle update image", e)}
+            src={donation.itemUrl}
+            alt={donation.item}
+            onClick={() => onDonationSelect(donation)}
           />
-        ))}
-      </div>
-    </>
+           <button onClick={() => onDonationSelect(donation)}>Select</button> 
+          
+          
+        </div>
+      ))}
+    </div>
   );
 }
+
+export default ImageGrid;
