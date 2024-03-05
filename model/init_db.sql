@@ -20,8 +20,8 @@ CREATE TABLE donations (
     id INT NOT NULL AUTO_INCREMENT, 
     item VARCHAR(40) NOT NULL, 
     itemPrice INTEGER NOT NULL,
-    itemUrl VARCHAR(250) NOT NULL,
-    itemDescription VARCHAR(250) NOT NULL,
+    itemUrl VARCHAR(500) NOT NULL,
+    itemDescription VARCHAR(500) NOT NULL,
     PRIMARY KEY (id)
 );
 

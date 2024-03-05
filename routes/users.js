@@ -7,7 +7,7 @@ const db = require("../model/helper");
 module.exports = router;
 
 //select donations from database
-router.get("/", function(req, res, next) {
+router.get("/donations", function(req, res, next) {
   
   db("SELECT * FROM donations;")
     .then(results => {

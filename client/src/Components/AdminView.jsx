@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './AdminView.css';
-//import Card.jsx from './Card.jsx';
+//simport Card.jsx from './Card.jsx';
 
 function AdminView({ addItems }) {
   const [donations, setDonations] = useState({
