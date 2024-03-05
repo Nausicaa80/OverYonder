@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './UserView.css';
+import Card from "./Card.jsx";
+import ImageGrid from "./ImageGrid";
 
 function DonationComponent({ onDonationSelect }) {
   const [donations, setDonations] = useState([]);

@@ -1,18 +1,16 @@
-import { useState } from "react";
+import React from "react";
 
 
-const Card = ({ item, onCardClick }) => {
+
+
+const Card = ({ number, project }) => {
   return (
     <div className="card">
-      <img src={item.image} alt={item.title} />
-      <div className="card-content">
-        <h3>{item.title}</h3>
-        <p>{item.description}</p>
-        <p>Price: {item.price}</p>
-        <button onClick={() => onCardClick(item)}>Select</button>
-      </div>
+      <h2>Card {number}</h2>
+      <div>Card details</div>
+      <img src={project.url} alt="" />
     </div>
   );
 };
 
-export default Card;
+export default Card
