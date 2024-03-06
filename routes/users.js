@@ -50,13 +50,13 @@ router.get("/:childrenGender", function (req, res, next) {
 
 // insert new donation item into the database
 router.post("/", function (req, res, next) {
-  const { item, itemPrice, itemUrl,itemDescription} = req.body;
+  const { item, itemPrice, itemUrl,itemDescription,itemImg} = req.body;
 
-  if (!item || !itemPrice|| !itemUrl|| !itemDescription) {
+  if (!item || !itemPrice|| !itemUrl|| !itemDescription|| !itemImg) {
     return res.status(400).json({ message: "Item and Item price are required" });
   }
 
-  db(`INSERT INTO donations (item, itemPrice, itemUrl,itemDescription) VALUES ('${item}', ${itemPrice})`)
+  db(`INSERT INTO donations (item, itemPrice, itemUrl,itemDescription, itemImg) VALUES ('${item}', ${itemPrice})`)
     .then(() => {
       res.status(201).json({ message: "Donation item added successfully" });
     })
