@@ -5,8 +5,8 @@ function ImageGrid({ donations, onDonationSelect }) {
       {donations.map((donation) => (
         <div key={donation.id} className='image-container'>
           <img
-            src={donation.itemUrl}
-            alt={donation.item}
+            src={donation.itemImg}
+            alt={donation.description}
             onClick={() => onDonationSelect(donation)}
           />
            <button onClick={() => onDonationSelect(donation)}>Select</button> 
