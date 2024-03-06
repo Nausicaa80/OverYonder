@@ -4,11 +4,11 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color:green;
+    background-color:silver;
 }
 
 .admin-view {
-    background-color: #fff;
+    background-color: silver;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -61,11 +61,11 @@ h2 {
 .donation-item-info p {
     margin: 5px 0;
     font-size: 14px;
-    color: #666;
+    color: silver;
 }
 
 .add-donation-form {
-    color : green;
+    color : silver;
     margin-top: 20px;
 }
 
@@ -87,7 +87,7 @@ h2 {
     border-radius: 5px;
 }
 
-.form-group button {
+/* .form-group button {
     background-color: #007bff;
     color: #fff;
     padding: 10px 15px;
@@ -96,8 +96,8 @@ h2 {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease-in-out;
-}
+} */
 
-.form-group button:hover {
+/* .form-group button:hover {
     background-color: #0056b3;
-}
+} */
