@@ -1,21 +1,21 @@
 /* ImageGrid.css */
 
 .image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 16px;
-    margin: 20px;
-  }
-  
-  .image-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .image-item img {
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 5px;
+  margin: 20px;
+}
+
+.image-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-item img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}

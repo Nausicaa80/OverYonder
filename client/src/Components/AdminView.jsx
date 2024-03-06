@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './AdminView.css';
-//simport Card.jsx from './Card.jsx';
 
 function AdminView({ addItems }) {
   const [donations, setDonations] = useState({
@@ -9,18 +8,40 @@ function AdminView({ addItems }) {
     url: '',
   });
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setDonations((prevDonations) => ({
-      ...prevDonations,
-      [name]: value,
-    }));
+  // // const handleChange = (event) => {
+  //   const { name, value } = event.target;
+  //   setDonations((prevDonations) => ({
+  //     ...prevDonations,
+  //     [name]: value,
+  //   }));
+  // // };
+
+  const sendThankYouEmail = async () => {
+    try {
+      const response = await fetch('/api/sendThankYouEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: 'recipient@example.com', // replace with the recipient's email address
+          subject: 'Thank You for Being a Secret Santa',
+          message: 'Thank you for your generous donation!',
+        }),
+      });
+
+      if (!response.ok) {
+        console.error('Failed to send thank you email:', response.status, response.statusText);
+      }
+    } catch (error) {
+      console.error('Error sending thank you email:', error);
+    }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     addItems(donations);
-    // Clear the form fields after submitting
+    await sendThankYouEmail();
     setDonations({
       title: '',
       description: '',
@@ -32,36 +53,8 @@ function AdminView({ addItems }) {
     <div className="admin-view">
       <h2>Secret Santa</h2>
       <form onSubmit={handleSubmit}>
-        <label>
-          Donations:
-          <input
-            type="text"
-            name="title"
-            value={donations.title}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        <label>
-          Description:
-          <textarea
-            name="description"
-            value={donations.description}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        <label>
-          Gift URL:
-          <input
-            type="url"
-            name="url"
-            value={donations.url}
-            onChange={handleChange}
-            required
-          />
-        </label>
-        <button type="submit">Add Gift</button>
+        {/* ... (your form inputs) */}
+        <button type="submit">Send Thank You</button>
       </form>
     </div>
   );
