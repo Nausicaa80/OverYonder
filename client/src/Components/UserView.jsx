@@ -40,8 +40,8 @@ function UserView() {
 
   return (
     <div className='user-view'>
-      <h2>Be a Secret Santa!</h2>
-      <h2>See our Gift List for Vulnerable Young People</h2>
+      <h2 style={{ color: 'gold'}}>Be a Secret Santa!</h2>
+      <h2 style ={{color : 'gold'}}>See our Gift List for Vulnerable Young People</h2>
 
       <ImageGrid donations={donations} onDonationSelect={handleDonationSelect} />
 

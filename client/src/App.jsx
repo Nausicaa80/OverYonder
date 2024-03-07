@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Secret Santa App</h1>
+      <h1 style={{ color : 'gold'}}>Secret Santa App</h1>
       <button onClick={toggleView}>
         Switch to {isAdmin ? 'User View' : 'Admin View'}
       </button>
