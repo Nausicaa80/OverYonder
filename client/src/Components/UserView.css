@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url('https://th.bing.com/th/id/R.316214eb48d63cd939f989646762483f?rik=6QjyTAXBGDcSew&riu=http%3a%2f%2fpsdreview.com%2fwp-content%2fuploads%2f2011%2f12%2fHD-Christmas-Wallpapers-8.jpeg&ehk=oZiyJFDBJs%2fjt3v8yjZGpF5OEze9GhjIvIMniro1%2bM8%3d&risl=&pid=ImgRaw&r=0');
-  background-size: contain;
+  background-size: cover;
   background-position:top;
   background-repeat: no-repeat;
   display: flex;

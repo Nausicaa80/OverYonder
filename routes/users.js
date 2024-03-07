@@ -19,34 +19,6 @@ router.get("/donations", function(req, res, next) {
     });
 });
 
-//Select boy in  childrenGender 
-
-/*Select boy in childrenGender
-//router.get("/:childrenGender", function (req, res, next) {
-  //const childrenGender = req.params.childrenGender;
-
-  //if (childrenGender === "boy") {
-    // Logic for when childrenGender is "boy"
-    //res.send({ message: "You selected boy" });
-  //} else {
-    // Logic for when childrenGender is not "boy"
-   // res.send({ message: "You did not select boy" });
-  }
-});
-
-//select girl in childrenGender
-router.get("/:childrenGender", function (req, res, next) {
-  const childrenGender = req.params.childrenGender;
-
-  if (childrenGender === "girls") {
-    // Logic for when childrenGender is "girl"
-    res.send({ message: "You selected girl" });
-  } else {
-    // Logic for when childrenGender is not "girl"
-    res.send({ message: "You did not select Girls" });
-  }
-});*/
-
 
 // insert new donation item into the database
 router.post("/", function (req, res, next) {

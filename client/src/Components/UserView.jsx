@@ -54,8 +54,11 @@ function UserView() {
           <div>
             <p>Title: {selectedItems.item}</p>
             <p>Description: {selectedItems.itemDescription}</p>
+            <p>Price:£{selectedItems.itemPrice} </p>
             <p>
+
               <a href={selectedItems.itemUrl} target='_blank' rel='noopener noreferrer'>
+                
                 View Details
               </a>
             </p>
