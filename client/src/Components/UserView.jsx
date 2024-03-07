@@ -54,11 +54,9 @@ function UserView() {
           <div>
             <p>Title: {selectedItems.item}</p>
             <p>Description: {selectedItems.itemDescription}</p>
-            <p>Price:£{selectedItems.itemPrice} </p>
+            <p>Price: £{selectedItems.itemPrice} </p>
             <p>
-
               <a href={selectedItems.itemUrl} target='_blank' rel='noopener noreferrer'>
-                
                 View Details
               </a>
             </p>
@@ -70,7 +68,8 @@ function UserView() {
       </div>
 
       <div className='basket'>
-        <h3>Basket</h3>
+        
+        <p>Total items in basket: {basket.length}</p>
         <ul>
           {basket.map((item, index) => (
             <li key={index}>{item.item}</li>
