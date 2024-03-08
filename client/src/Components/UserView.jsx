@@ -46,15 +46,15 @@ function UserView() {
       <ImageGrid donations={donations} onDonationSelect={handleDonationSelect} />
 
       <div className='donations-items'>
-        <h3>Choose between our gift options</h3>
+        {/* <h3 style={{color :'gold'}}>Choose between our gift options</h3> */}
       </div>
 
       <div className='selected-items'>
         {selectedItems ? (
           <div>
-            <p>Title: {selectedItems.item}</p>
-            <p>Description: {selectedItems.itemDescription}</p>
-            <p>Price: £{selectedItems.itemPrice} </p>
+            <p style={{color:'gold'}}>Title: {selectedItems.item}</p>
+            <p style={{color : 'gold'}}>Description: {selectedItems.itemDescription}</p>
+            <p style= {{color: 'gold'}}>Price: £{selectedItems.itemPrice} </p>
             <p>
               <a href={selectedItems.itemUrl} target='_blank' rel='noopener noreferrer'>
                 View Details
@@ -69,7 +69,7 @@ function UserView() {
 
       <div className='basket'>
         
-        <p>Total items in basket: {basket.length}</p>
+        <p style={{color:'gold'}}>Total items in basket: {basket.length}</p>
         <ul>
           {basket.map((item, index) => (
             <li key={index}>{item.item}</li>
