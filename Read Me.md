@@ -38,8 +38,8 @@ Now you are free to run your queries, such as:
 
 ```
 SHOW tables;
-SELECT * FROM <tablename>;
-DESC <tablename>;
+SELECT * FROM <donations>;
+DESC <donations>;
 ```
 
 Fin! You are done! Now get developing!
@@ -113,3 +113,13 @@ npm i
 
 
 ```
+
+FRONT END
+USERVIEW has a image grid presenting the list of suggested gift items, from low price to higher price. When you click, the item description and price pops up,plus a link to the website where the item can be purchased. The page also has a add to basket button
+
+BACK END
+DB set on MySQL
+
+TO BE ADDED:
+Thank you pop up for donors;
+Payment option in basket button 
